@@ -26,7 +26,7 @@ function RandomColor() {
   return (
     <div>
       <div className='h-screen w-screen flex flex-col justify-center' style ={{ backgroundColor: color }}>
-        <div className='text-black my-2 text-center text-5xl' style ={{ backgroundColor: color }} >Current Color = {color} </div>
+        <div className='text-black my-2 text-center text-5xl' style ={{ backgroundColor: color }} >{color} </div>
         <button className='p-2 rounded bg-black text-white mx-150 my-2' onClick={()=>handleHexColor()}>Generate Hex Color</button>
         <button className='p-2 rounded bg-black text-white mx-150 my-2' onClick={()=>handleRGBColor()}>Generate RGB Color</button>
       </div>
