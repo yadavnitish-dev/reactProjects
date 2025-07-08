@@ -6,7 +6,6 @@ function App() {
   return (
     <>
     <RandomColor/>
-    <div>howeorjwiendfienri</div>
     </>
     
 
