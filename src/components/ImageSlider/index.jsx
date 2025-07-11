@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 async function fetchImages() {
-  const response = await fetch("https://picsum.photos/v2/list?page=5&limit=30");
+  const response = await fetch("https://picsum.photos/v2/list?page=5&limit=5");
   const data = await response.json();
   const picArray = data.map((picture) => picture.download_url)
   console.log(picArray);
@@ -10,16 +10,15 @@ async function fetchImages() {
 
 function ImageSlider() {
   const [images, setImages] = useState([]);
-  const [imgIdx, setImgIdx] = useState(15);
+  const [imgIdx, setImgIdx] = useState(0);
 
   const handleClick = async () => {
     const urls = await fetchImages();
     setImages(urls);
   };
 
-  const handleLeftArrow = (prev)=>setImgIdx(prev=>prev-1)
-  const handleRightArrow = (prev)=>setImgIdx(prev=>prev+1)
-
+  const handleLeftArrow = (prev)=>setImgIdx((prev) => prev === 0 ? images.length - 1 : prev - 1)
+  const handleRightArrow = (prev)=>setImgIdx((prev) => prev === images.length - 1 ? 0 : prev + 1)
   return (
     <div>
       <div className='flex justify-center my-20'>
