@@ -29,12 +29,16 @@ function ImageSlider() {
   return (
     <div>
       <div className='flex justify-center my-20'>
-        <button onClick={loadImages} className='bg-blue-400 text-white rounded-3xl p-2'>Load Images</button>
+        <button onClick={loadImages} className='bg-blue-500 hover:bg-blue-400 text-white rounded-3xl p-2'>Load Images</button>
       </div>
       <div className='flex justify-center'>
-        <div><button className="mr-5 mt-45 p-2 rounded-4xl text-white bg-blue-400" onClick={handleLeftArrow}>{"<--"}</button></div>
-        <div className='bg-blue-200'><img src={images[imgIdx]} alt="" className="w-100 h-100" /></div>
-        <div><button className='ml-5 mt-45 p-2 rounded-4xl text-white bg-blue-400' onClick={handleRightArrow}>{"-->"}</button></div>
+        <div>
+          <button className="mr-5 mt-45 p-2 rounded-4xl hover:bg-blue-400 text-white bg-blue-500" onClick={handleLeftArrow}>{"<--"}</button>
+        </div>
+        <div className='bg-blue-200 cursor-pointer'><img src={images[imgIdx]} alt="" className="w-100 h-100" /></div>
+        <div>
+          <button className='ml-5 mt-45 p-2 rounded-4xl hover:bg-blue-400 text-white bg-blue-500' onClick={handleRightArrow}>{"-->"}</button>
+        </div>
       </div>
     </div>
   );
