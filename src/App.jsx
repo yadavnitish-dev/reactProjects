@@ -3,6 +3,7 @@ import RandomColor from './components/RandomColor/index.jsx'
 import StarRating from './components/StarRating/index.jsx'
 import ImageSlider from './components/ImageSlider/index.jsx'
 import LoadMoreProducts from './components/LoadMoreProducts/index.jsx'
+import QRCodeGenerator from './components/QRCodeGenerator/index.jsx'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     {/* <RandomColor/> */}
     {/* <StarRating /> */}
     {/* <ImageSlider/> */}
-    <LoadMoreProducts/>
+    {/* <LoadMoreProducts/> */}
+    <QRCodeGenerator/>
     
     </>
     
