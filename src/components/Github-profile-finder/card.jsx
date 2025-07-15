@@ -1,4 +1,4 @@
-import { Target } from 'lucide-react'
+
 import React from 'react'
 
 const Profile = ({user}) => {

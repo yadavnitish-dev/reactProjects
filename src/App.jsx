@@ -7,6 +7,7 @@ import QRCodeGenerator from './components/QRCodeGenerator/index.jsx'
 import ScrollIndicator from './components/Scroll-Indicator/index.jsx'
 import Modal from './components/Popup-Modal/index.jsx'
 import GithubProfile from './components/Github-profile-finder/index.jsx'
+import Autocomplete from './components/Search-autocomplete/index.jsx'
 
 function App() {
 
@@ -19,7 +20,8 @@ function App() {
     {/* <QRCodeGenerator/> */}
     {/* <ScrollIndicator /> */}
     {/* <Modal /> */}
-    <GithubProfile />
+    {/* <GithubProfile /> */}
+    <Autocomplete />
     </>
     
 
