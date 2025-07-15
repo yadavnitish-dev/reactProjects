@@ -6,6 +6,7 @@ import LoadMoreProducts from './components/LoadMoreProducts/index.jsx'
 import QRCodeGenerator from './components/QRCodeGenerator/index.jsx'
 import ScrollIndicator from './components/Scroll-Indicator/index.jsx'
 import Modal from './components/Popup-Modal/index.jsx'
+import GithubProfile from './components/Github-profile-finder/index.jsx'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
     {/* <LoadMoreProducts/> */}
     {/* <QRCodeGenerator/> */}
     {/* <ScrollIndicator /> */}
-    <Modal />
+    {/* <Modal /> */}
+    <GithubProfile />
     </>
     
 
