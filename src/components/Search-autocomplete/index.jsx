@@ -25,6 +25,12 @@ const Autocomplete = () => {
     }
   };
 
+  const handleClick =(event)=>{
+    setShowDropdown(false);
+    setSearchParam(event.target.innerText);
+    setFilteredUsers([]);
+  }
+
   const fetchUsers = async () => {
     try {
       setLoading(true);
@@ -66,7 +72,7 @@ const Autocomplete = () => {
         )}
       </div>
       <div className="flex justify-center mt-5">
-        {showDropdown ? <Suggestions data={filteredUsers}/> : ""}
+        {showDropdown ? <Suggestions data={filteredUsers} handleClick = {handleClick}/> : ""}
       </div>
       
     </div>
