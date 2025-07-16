@@ -8,6 +8,7 @@ import ScrollIndicator from './components/Scroll-Indicator/index.jsx'
 import Modal from './components/Popup-Modal/index.jsx'
 import GithubProfile from './components/Github-profile-finder/index.jsx'
 import Autocomplete from './components/Search-autocomplete/index.jsx'
+import TicTacToe from './components/tic-tac-toe/index.jsx'
 
 function App() {
 
@@ -21,7 +22,8 @@ function App() {
     {/* <ScrollIndicator /> */}
     {/* <Modal /> */}
     {/* <GithubProfile /> */}
-    <Autocomplete />
+    {/* <Autocomplete /> */}
+    <TicTacToe/>
     </>
     
 
