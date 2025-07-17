@@ -12,6 +12,7 @@ import TicTacToe from './components/tic-tac-toe/index.jsx'
 import { FeatureContextProvider } from './components/Feature-flag/context/index.jsx'
 import FeatureFlag from './components/Feature-flag/index.jsx'
 import UseFetchHook from './components/Custom-UseFetch/test.jsx'
+import UseOutsideClickHook from './components/UseOutsideClick/text.jsx'
 
 function App() {
 
@@ -27,12 +28,16 @@ function App() {
     {/* <GithubProfile /> */}
     {/* <Autocomplete /> */}
     {/* <TicTacToe/> */}
-{/*     
+
+    {/*     
     <FeatureContextProvider>
       <FeatureFlag/>
-    </FeatureContextProvider> */}
+    </FeatureContextProvider> 
+    */}
 
-    <UseFetchHook />
+    {/* <UseFetchHook /> */}
+    <UseOutsideClickHook />
+
 
     </>
     
