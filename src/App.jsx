@@ -7,12 +7,13 @@ import QRCodeGenerator from './components/QRCodeGenerator/index.jsx'
 import ScrollIndicator from './components/Scroll-Indicator/index.jsx'
 import Modal from './components/Popup-Modal/index.jsx'
 import GithubProfile from './components/Github-profile-finder/index.jsx'
-import Autocomplete from './components/Search-autocomplete/index.jsx'
+import Autocomplete from './components/SearchAutocomplete/index.jsx'
 import TicTacToe from './components/tic-tac-toe/index.jsx'
 import { FeatureContextProvider } from './components/Feature-flag/context/index.jsx'
 import FeatureFlag from './components/Feature-flag/index.jsx'
 import UseFetchHook from './components/Custom-UseFetch/test.jsx'
-import UseOutsideClickHook from './components/UseOutsideClick/text.jsx'
+import UseOutsideClickHook from './components/Custom-useOutsideClick/text.jsx'
+import UseWindowResizeTest from './components/Custom-useWindowResize/test.jsx'
 
 function App() {
 
@@ -36,7 +37,8 @@ function App() {
     */}
 
     {/* <UseFetchHook /> */}
-    <UseOutsideClickHook />
+    {/* <UseOutsideClickHook /> */}
+    <UseWindowResizeTest />
 
 
     </>
