@@ -9,6 +9,8 @@ import Modal from './components/Popup-Modal/index.jsx'
 import GithubProfile from './components/Github-profile-finder/index.jsx'
 import Autocomplete from './components/Search-autocomplete/index.jsx'
 import TicTacToe from './components/tic-tac-toe/index.jsx'
+import { FeatureContextProvider } from './components/Feature-flag/context/index.jsx'
+import FeatureFlag from './components/Feature-flag/index.jsx'
 
 function App() {
 
@@ -23,7 +25,12 @@ function App() {
     {/* <Modal /> */}
     {/* <GithubProfile /> */}
     {/* <Autocomplete /> */}
-    <TicTacToe/>
+    {/* <TicTacToe/> */}
+    
+    <FeatureContextProvider>
+      <FeatureFlag/>
+    </FeatureContextProvider>
+
     </>
     
 
