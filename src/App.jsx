@@ -15,6 +15,7 @@ import UseFetchHook from './components/Custom-UseFetch/test.jsx'
 import UseOutsideClickHook from './components/Custom-useOutsideClick/text.jsx'
 import UseWindowResizeTest from './components/Custom-useWindowResize/test.jsx'
 import ScrollToTop_Bottom from './components/ScrollToTop_Bottom/index.jsx'
+import ScrollToSection from './components/ScrollToTop_Bottom/scrollToSection.jsx'
 
 function App() {
 
@@ -40,7 +41,8 @@ function App() {
     {/* <UseFetchHook /> */}
     {/* <UseOutsideClickHook /> */}
     {/* <UseWindowResizeTest /> */}
-    <ScrollToTop_Bottom />
+    {/* <ScrollToTop_Bottom /> */}
+    <ScrollToSection/>
 
 
     </>
