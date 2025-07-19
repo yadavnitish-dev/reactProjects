@@ -16,6 +16,7 @@ import UseOutsideClickHook from './components/Custom-useOutsideClick/text.jsx'
 import UseWindowResizeTest from './components/Custom-useWindowResize/test.jsx'
 import ScrollToTop_Bottom from './components/ScrollToTop_Bottom/index.jsx'
 import ScrollToSection from './components/ScrollToTop_Bottom/scrollToSection.jsx'
+import Weather from './components/WeatherApp/Weather/index.jsx'
 
 function App() {
 
@@ -42,7 +43,8 @@ function App() {
     {/* <UseOutsideClickHook /> */}
     {/* <UseWindowResizeTest /> */}
     {/* <ScrollToTop_Bottom /> */}
-    <ScrollToSection/>
+    {/* <ScrollToSection/> */}
+    <Weather />
 
 
     </>
