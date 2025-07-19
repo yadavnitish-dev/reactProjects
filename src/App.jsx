@@ -14,6 +14,7 @@ import FeatureFlag from './components/Feature-flag/index.jsx'
 import UseFetchHook from './components/Custom-UseFetch/test.jsx'
 import UseOutsideClickHook from './components/Custom-useOutsideClick/text.jsx'
 import UseWindowResizeTest from './components/Custom-useWindowResize/test.jsx'
+import ScrollToTop_Bottom from './components/ScrollToTop_Bottom/index.jsx'
 
 function App() {
 
@@ -38,7 +39,8 @@ function App() {
 
     {/* <UseFetchHook /> */}
     {/* <UseOutsideClickHook /> */}
-    <UseWindowResizeTest />
+    {/* <UseWindowResizeTest /> */}
+    <ScrollToTop_Bottom />
 
 
     </>
