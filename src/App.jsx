@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import RandomColor from './components/RandomColor/index.jsx'
 import StarRating from './components/StarRating/index.jsx'
 import ImageSlider from './components/ImageSlider/index.jsx'
@@ -17,6 +18,9 @@ import UseWindowResizeTest from './components/Custom-useWindowResize/test.jsx'
 import ScrollToTop_Bottom from './components/ScrollToTop_Bottom/index.jsx'
 import ScrollToSection from './components/ScrollToTop_Bottom/scrollToSection.jsx'
 import Weather from './components/WeatherApp/Weather/index.jsx'
+import Appp from './components/RecipeApp/Appp/index.jsx'
+import {RecipeProvider} from './components/RecipeApp/context/index.jsx'
+
 
 function App() {
 
@@ -45,9 +49,12 @@ function App() {
     {/* <ScrollToTop_Bottom /> */}
     {/* <ScrollToSection/> */}
     {/* <Weather /> */}
+    <BrowserRouter>
+      <RecipeProvider>
+        <Appp/>
+      </RecipeProvider>
+    </BrowserRouter>
     </>
-    
-
   )
 }
 
