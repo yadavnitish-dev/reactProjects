@@ -44,9 +44,7 @@ function App() {
     {/* <UseWindowResizeTest /> */}
     {/* <ScrollToTop_Bottom /> */}
     {/* <ScrollToSection/> */}
-    <Weather />
-
-
+    {/* <Weather /> */}
     </>
     
 
