@@ -20,6 +20,8 @@ import ScrollToSection from './components/ScrollToTop_Bottom/scrollToSection.jsx
 import Weather from './components/WeatherApp/Weather/index.jsx'
 import Appp from './components/RecipeApp/Appp/index.jsx'
 import {RecipeProvider} from './components/RecipeApp/context/index.jsx'
+import ShoppingCart from './components/ShoppingCart/ShoppingCartRoutes/index.jsx'
+
 
 
 function App() {
@@ -49,11 +51,17 @@ function App() {
     {/* <ScrollToTop_Bottom /> */}
     {/* <ScrollToSection/> */}
     {/* <Weather /> */}
-    <BrowserRouter>
+
+    {/* <BrowserRouter>
       <RecipeProvider>
         <Appp/>
       </RecipeProvider>
+    </BrowserRouter> */}
+
+    <BrowserRouter>
+      <ShoppingCart />
     </BrowserRouter>
+
     </>
   )
 }
