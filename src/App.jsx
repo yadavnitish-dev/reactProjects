@@ -21,6 +21,7 @@ import Weather from './components/WeatherApp/Weather/index.jsx'
 import Appp from './components/RecipeApp/Appp/index.jsx'
 import {RecipeProvider} from './components/RecipeApp/context/index.jsx'
 import ShoppingCart from './components/ShoppingCart/ShoppingCartRoutes/index.jsx'
+import Counter from './components/CounterWithUndoRedo/index.jsx'
 
 
 
@@ -58,9 +59,11 @@ function App() {
       </RecipeProvider>
     </BrowserRouter> */}
 
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <ShoppingCart />
-    </BrowserRouter>
+    </BrowserRouter> */}
+
+    <Counter />
 
     </>
   )
