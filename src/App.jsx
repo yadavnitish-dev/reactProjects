@@ -22,6 +22,8 @@ import Appp from './components/RecipeApp/Appp/index.jsx'
 import {RecipeProvider} from './components/RecipeApp/context/index.jsx'
 import ShoppingCart from './components/ShoppingCart/ShoppingCartRoutes/index.jsx'
 import Counter from './components/CounterWithUndoRedo/index.jsx'
+import { Provider } from 'react-redux'
+import store from "./components/ShoppingCart/Store/index.jsx"
 
 
 
@@ -59,11 +61,13 @@ function App() {
       </RecipeProvider>
     </BrowserRouter> */}
 
-    {/* <BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
       <ShoppingCart />
-    </BrowserRouter> */}
+      </BrowserRouter>
+    </Provider>
 
-    <Counter />
+    {/* <Counter /> */}
 
     </>
   )
