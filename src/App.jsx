@@ -24,6 +24,7 @@ import ShoppingCart from './components/ShoppingCart/ShoppingCartRoutes/index.jsx
 import Counter from './components/CounterWithUndoRedo/index.jsx'
 import { Provider } from 'react-redux'
 import store from "./components/ShoppingCart/Store/index.jsx"
+import OutsideDropdownClose from './components/OutsideDropdownClose/index.jsx'
 
 
 
@@ -61,13 +62,14 @@ function App() {
       </RecipeProvider>
     </BrowserRouter> */}
 
-    <Provider store={store}>
+    {/* <Provider store={store}>
       <BrowserRouter>
       <ShoppingCart />
       </BrowserRouter>
-    </Provider>
+    </Provider> */}
 
     {/* <Counter /> */}
+    <OutsideDropdownClose />
 
     </>
   )
