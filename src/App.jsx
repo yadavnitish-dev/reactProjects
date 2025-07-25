@@ -69,8 +69,8 @@ function App() {
       </BrowserRouter>
     </Provider>
 
-    {/* <Counter /> */}
-    {/* <OutsideDropdownClose /> */}
+    <Counter />
+    <OutsideDropdownClose />
 
     </>
   )
