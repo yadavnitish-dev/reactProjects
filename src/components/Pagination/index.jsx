@@ -20,7 +20,11 @@ function Pagination({ currentPage, totalPages = 10, onPageChange }) {
       </button>
       {generateNoOfPages().map((pageNo) => (
         <button
-          className="bg-blue-500 text-white px-3 py-1 rounded-full"
+          className={
+            currentPage === pageNo
+              ? "bg-green-600 text-white rounded-full px-3 py-1"
+              : "bg-blue-500 text-white rounded-full px-3 py-1"
+          }
           key={pageNo}
           onClick={() => onPageChange(pageNo)}
         >
