@@ -25,6 +25,7 @@ import Counter from './components/CounterWithUndoRedo/index.jsx'
 import { Provider } from 'react-redux'
 import store from "./components/ShoppingCart/Store/index.jsx"
 import PaginationTest from './components/Pagination/test.jsx'
+import DigitalClock from './components/DigitalClock/index.jsx'
 
 
 
@@ -69,7 +70,8 @@ function App() {
     </Provider> */}
 
     {/* <Counter /> */}
-    <PaginationTest />
+    {/* <PaginationTest /> */}
+    <DigitalClock />
     </>
   )
 }
