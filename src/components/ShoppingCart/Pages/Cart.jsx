@@ -14,7 +14,7 @@ const Cart = () => {
 
   console.log(cart, totalCart);
   return (
-    <div>
+    <div className="flex justify-center">
       {cart && cart.length ? (
         <div>
           <div className="min-h-[80vh] grid md:grid-cols-2 max-w-6xl mx-auto">
@@ -23,7 +23,7 @@ const Cart = () => {
                 <CartTile cartItem={cartItem} />
               ))}
             </div>
-            <div>
+            <div className="w-[300px]">
               <div className="flex flex-col justify-center items-end p-5 space-y-5 mt-14">
                 <h1 className="font-bold text-lg text-red-800">
                   Your Cart Summary
