@@ -24,6 +24,7 @@ import ShoppingCart from './components/ShoppingCart/ShoppingCartRoutes/index.jsx
 import Counter from './components/CounterWithUndoRedo/index.jsx'
 import { Provider } from 'react-redux'
 import store from "./components/ShoppingCart/Store/index.jsx"
+import Pagination from './components/Pagination/index.jsx'
 
 
 
@@ -68,7 +69,7 @@ function App() {
     </Provider> */}
 
     {/* <Counter /> */}
-
+    <Pagination />
     </>
   )
 }
