@@ -19,7 +19,6 @@
     "react-qr-code": "^2.0.18",
     "react-redux": "^9.2.0",
     "react-router-dom": "^7.7.0",
-    "react-spinny": "^1.0.8",
     "tailwindcss": "^4.1.11"
   },
   "devDependencies": {

@@ -27,8 +27,6 @@ import store from "./components/ShoppingCart/Store/index.jsx"
 
 
 
-
-
 function App() {
 
   return (
@@ -70,7 +68,6 @@ function App() {
     </Provider> */}
 
     {/* <Counter /> */}
-
 
     </>
   )
