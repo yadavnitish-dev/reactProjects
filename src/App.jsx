@@ -27,6 +27,7 @@ import store from "./components/ShoppingCart/Store/index.jsx"
 import PaginationTest from './components/Pagination/test.jsx'
 import DigitalClock from './components/DigitalClock/index.jsx'
 import Timer from './components/CountdownTimer/test.jsx'
+import ProgressBar from './components/StepProgressBar/index.jsx'
 
 
 function App() {
@@ -72,7 +73,8 @@ function App() {
     {/* <Counter /> */}
     {/* <PaginationTest /> */}
     {/* <DigitalClock /> */}
-    <Timer />
+    {/* <Timer /> */}
+    <ProgressBar />
     </>
   )
 }
