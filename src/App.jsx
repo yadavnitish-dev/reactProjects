@@ -26,7 +26,7 @@ import { Provider } from 'react-redux'
 import store from "./components/ShoppingCart/Store/index.jsx"
 import PaginationTest from './components/Pagination/test.jsx'
 import DigitalClock from './components/DigitalClock/index.jsx'
-
+import Timer from './components/CountdownTimer/test.jsx'
 
 
 function App() {
@@ -71,7 +71,8 @@ function App() {
 
     {/* <Counter /> */}
     {/* <PaginationTest /> */}
-    <DigitalClock />
+    {/* <DigitalClock /> */}
+    <Timer />
     </>
   )
 }
