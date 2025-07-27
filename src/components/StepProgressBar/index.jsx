@@ -18,9 +18,20 @@ function ProgressBar() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-black">
-      <div className="flex bg-white w-[500px] text-[10px] justify-around select-none">
+      <div className="flex bg-white  text-[15px]select-none">
         {steps && steps.length
-          ? steps.map((step, idx) => <div key={idx}>{step}</div>)
+          ? steps.map((step, idx) => (
+              <div
+                key={idx}
+                className={`transition-colors duration-300 te ${
+                  idx <= activeStep
+                    ? "bg-green-500 text-green-500"
+                    : "bg-gray-300 text-gray-300"
+                }`}
+              >
+                Lorem ipsum dolor sit amet.
+              </div>
+            ))
           : null}
       </div>
       <div className="flex gap-10 mt-10 ">
