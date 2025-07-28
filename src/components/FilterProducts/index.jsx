@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { act, useEffect, useState } from "react";
 
 function FilterProducts() {
   const [products, setProducts] = useState([]);
@@ -61,7 +61,9 @@ function FilterProducts() {
         {uniqueCategories && uniqueCategories.length > 0
           ? uniqueCategories.map((categoryItem) => (
               <button
-                className="bg-indigo-600 py-1 mx-18 rounded-xl"
+                className={` py-1 mx-18 rounded-xl ${
+                  selectedCategory === categoryItem ? "bg-green-800" : "bg-indigo-600"
+                }`}
                 onClick={() =>
                   setSelectedCategory(
                     selectedCategory === categoryItem ? "" : categoryItem
