@@ -29,6 +29,7 @@ import DigitalClock from './components/DigitalClock/index.jsx'
 import Timer from './components/CountdownTimer/test.jsx'
 import ProgressBar from './components/StepProgressBar/index.jsx'
 import RandomQuote from './components/RandonQuoteGenerator/index.jsx'
+import CurrencyConverter from './components/CurrencyConverter/index.jsx'
 
 
 function App() {
@@ -76,8 +77,8 @@ function App() {
     {/* <DigitalClock /> */}
     {/* <Timer /> */}
     {/* <ProgressBar /> */}
-      <RandomQuote />
-
+    {/* <RandomQuote /> */}
+      <CurrencyConverter />
     </>
   )
 }
