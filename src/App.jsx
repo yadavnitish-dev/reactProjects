@@ -28,6 +28,7 @@ import PaginationTest from './components/Pagination/test.jsx'
 import DigitalClock from './components/DigitalClock/index.jsx'
 import Timer from './components/CountdownTimer/test.jsx'
 import ProgressBar from './components/StepProgressBar/index.jsx'
+import RandomQuote from './components/RandonQuoteGenerator/index.jsx'
 
 
 function App() {
@@ -74,7 +75,9 @@ function App() {
     {/* <PaginationTest /> */}
     {/* <DigitalClock /> */}
     {/* <Timer /> */}
-    <ProgressBar />
+    {/* <ProgressBar /> */}
+      <RandomQuote />
+
     </>
   )
 }
