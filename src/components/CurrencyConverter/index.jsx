@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 function CurrencyConverter() {
   const [amount, setAmount] = useState(1);
-  const [fromCurrency, setFromCurrency] = useState("INR");
-  const [toCurrency, setToCurrency] = useState("USD");
+  const [fromCurrency, setFromCurrency] = useState("USD");
+  const [toCurrency, setToCurrency] = useState("INR");
   const [exchangeRate, setExchangeRate] = useState("");
   const [convertedAmount, setConvertedAmount] = useState("");
 
@@ -36,37 +36,47 @@ function CurrencyConverter() {
   }
 
   return (
-    <div className="bg-black flex flex-col justify-center items-center gap-5 text-white h-screen">
-      <h1 className="text-5xl mb-15">Currency Converter</h1>
-      <div className="bg-white text-gray-700">
+    <div className="bg-black flex flex-col justify-center items-center text-white h-screen">
+      <h1 className="text-6xl mb-15">Currency Converter</h1>
+      <div className="bg-white text-gray-700 mb-3 rounded-2xl">
         <input
           type="number"
           placeholder="Enter Amount"
           name="amount"
           value={amount}
           onChange={handleAmountChange}
+          className="w-[500px] h-10 border-r-1 mx-2 focus:outline-none"
         />
-        <select value={fromCurrency} onChange={handleFromCurrencyChange}>
+        <select
+          value={fromCurrency}
+          onChange={handleFromCurrencyChange}
+          className="h-10 mx-2 focus:outline-none"
+        >
           <option value="USD">USD</option>
           <option value="INR">INR</option>
           <option value="EUR">EUR</option>
         </select>
       </div>
-      <p>To</p>
-      <div className="bg-white text-gray-700">
+      <p className="mb-5 text-2xl">To</p>
+      <div className="bg-white text-gray-700 mb-5 rounded-2xl">
         <input
           type="text"
           placeholder="ConvertedAmount"
           value={convertedAmount}
           readOnly
+          className="w-[500px] h-10 border-r-1 mx-2 focus:outline-none"
         />
-        <select value={toCurrency} onChange={handleToCurrencyChange}>
+        <select
+          value={toCurrency}
+          onChange={handleToCurrencyChange}
+          className="h-10 mx-2 focus:outline-none"
+        >
           <option value="USD">USD</option>
           <option value="INR">INR</option>
           <option value="EUR">EUR</option>
         </select>
       </div>
-      <div>
+      <div className="text-2xl">
         <p>{`Exchange Rate : 1 ${fromCurrency} = ${exchangeRate} ${toCurrency}`}</p>
       </div>
     </div>
