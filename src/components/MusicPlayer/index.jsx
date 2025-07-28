@@ -44,7 +44,7 @@ function MusicPlayer() {
   useEffect(() => {
     const audio = audioRef.current;
     if (audio) {
-      audio.load(); // reload new audio src
+      audio.load();
       setTrackProgress(0);
 
       if (isPlaying) {
