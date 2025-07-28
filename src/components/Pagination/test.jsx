@@ -4,7 +4,7 @@ import Pagination from ".";
 function PaginationTest() {
   const dummyData = Array.from({ length: 100 }, (_, idx) => ({
     id: idx,
-    name: `product ${idx + 1}`,
+    name: `Product ${idx + 1}`,
   }));
 
   const itemsPerPage = 10;
@@ -19,9 +19,9 @@ function PaginationTest() {
   const handleOnPageChange = (currentPage) => setCurrentPage(currentPage);
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen gap-1">
-      <h1 className="text-7xl mb-15">Pagination</h1>
-      <ul className="text-2xl mb-15">
+    <div className="flex flex-col justify-center items-center h-screen gap-1 text-white bg-black">
+      <h1 className="text-9xl mb-20">Pagination</h1>
+      <ul className="text-3xl mb-15">
         {currentListOfItems.map((listItem) => (
           <li key={listItem.id}>{listItem.name}</li>
         ))}

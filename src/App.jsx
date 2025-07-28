@@ -76,13 +76,13 @@ function App() {
     </Provider> */}
     {/* <FilterProducts /> */}
 
-    {/* <Counter /> */}
-    {/* <PaginationTest /> */}
-    {/* <DigitalClock /> */}
-    {/* <Timer /> */}
-    {/* <ProgressBar /> */}
-    {/* <RandomQuote /> */}
-    {/* <CurrencyConverter /> */}
+    <Counter />
+    <PaginationTest />
+    <DigitalClock />
+    <Timer />
+    <ProgressBar />
+    <RandomQuote />
+    <CurrencyConverter />
     <MusicPlayer />
     </>
   )
