@@ -31,6 +31,8 @@ import ProgressBar from './components/StepProgressBar/index.jsx'
 import RandomQuote from './components/RandonQuoteGenerator/index.jsx'
 import CurrencyConverter from './components/CurrencyConverter/index.jsx'
 import FilterProducts from './components/FilterProducts/index.jsx'
+import { Music } from 'lucide-react'
+import MusicPlayer from './components/MusicPlayer/index.jsx'
 
 
 function App() {
@@ -72,6 +74,7 @@ function App() {
       <ShoppingCart />
       </BrowserRouter>
     </Provider> */}
+    {/* <FilterProducts /> */}
 
     {/* <Counter /> */}
     {/* <PaginationTest /> */}
@@ -80,7 +83,7 @@ function App() {
     {/* <ProgressBar /> */}
     {/* <RandomQuote /> */}
     {/* <CurrencyConverter /> */}
-    <FilterProducts />
+    <MusicPlayer />
     </>
   )
 }
