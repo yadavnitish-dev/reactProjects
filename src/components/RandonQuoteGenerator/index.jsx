@@ -29,6 +29,7 @@ function RandomQuote() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-black text-white gap-10">
+      <h1 className="text-8xl mb-20">RandomQuoteGenerator</h1>
       <div className="text-3xl flex text-center mx-30">{quote.quote}</div>
       <div>{quote.author}</div>
       <button

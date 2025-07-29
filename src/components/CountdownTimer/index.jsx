@@ -49,12 +49,13 @@ function Countdown({ initialTime, onTimeFinish }) {
   const seconds = time % 60;
 
   return (
-    <div className="flex justify-center items-center h-screen text-9xl flex-col bg-black text-white">
-      <div>
+    <div className="flex justify-center items-center h-screen flex-col bg-black text-white">
+      <h1 className="mb-20 text-8xl">Timer</h1>
+      <div className="text-9xl">
         {String(minutes).padStart(2, "0")} : {String(seconds).padStart(2, "0")}
       </div>
 
-      <div className="mt-20 text-7xl flex gap-[50px]">
+      <div className="mt-20 text-5xl flex gap-[50px]">
         <button
           onClick={handleReset}
           className="bg-indigo-600 rounded-full px-6 py-6 text-white"

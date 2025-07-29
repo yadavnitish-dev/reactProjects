@@ -18,6 +18,7 @@ function ProgressBar() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-black">
+      <h1 className="text-8xl mb-40 text-white">Step Progress Bar</h1>
       <div className="flex bg-white  text-[15px]select-none">
         {steps && steps.length
           ? steps.map((step, idx) => (
@@ -34,7 +35,7 @@ function ProgressBar() {
             ))
           : null}
       </div>
-      <div className="flex gap-10 mt-10 ">
+      <div className="flex gap-10 mt-20 ">
         <button
           className="bg-indigo-600 
          px-5 py-5 rounded-full disabled:bg-indigo-300"

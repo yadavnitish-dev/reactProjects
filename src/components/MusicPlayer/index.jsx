@@ -98,7 +98,7 @@ function MusicPlayer() {
 
   return (
     <div className="flex flex-col justify-center items-center text-center text-white bg-black h-screen">
-      <h1 className="text-8xl mb-15">MusicPlayer</h1>
+      <h1 className="text-8xl mb-15">Music Player</h1>
       <div className="mb-5 w-[350px]">
         <img
           src={tracks[currentMusicTrack].image}

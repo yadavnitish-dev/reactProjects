@@ -27,9 +27,7 @@ const Counter = () => {
   return (
     <>
       <div className="text-center text-7xl pt-30 bg-black text-white h-screen w-screen">
-        <h1 className="font-bold drop-shadow-lg">
-          Counter App with Undo and Redo
-        </h1>
+        <h1 className="drop-shadow-lg text-8xl">Counter with Undo & Redo</h1>
         <div className="mt-20 text-[200px] font-extrabold drop-shadow-2xl transition-all duration-300">
           {currentValue}
         </div>

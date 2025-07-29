@@ -22,7 +22,7 @@ function Pagination({ currentPage, totalPages = 10, onPageChange }) {
         </button>
       </div>
       {generateNoOfPages().map((pageNo) => (
-        <div>
+        <div key={pageNo}>
           <button
             className={
               currentPage === pageNo
