@@ -19,7 +19,7 @@ function DigitalClock() {
         <span>{time.getSeconds().toString().padStart(2, "0")}</span>
       </div>
 
-      <div className="text-white text-5xl">
+      <div className="text-5xl text-indigo-600">
         {time.toLocaleDateString(undefined, {
           weekday: "long",
           year: "numeric",

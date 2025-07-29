@@ -37,7 +37,7 @@ function CurrencyConverter() {
 
   return (
     <div className="bg-black flex flex-col justify-center items-center text-white h-screen">
-      <h1 className="text-6xl mb-15">Currency Converter</h1>
+      <h1 className="text-8xl mb-30">Currency Converter</h1>
       <div className="bg-white text-gray-700 mb-3 rounded-2xl">
         <input
           type="number"
@@ -58,7 +58,7 @@ function CurrencyConverter() {
         </select>
       </div>
       <p className="mb-5 text-2xl">To</p>
-      <div className="bg-white text-gray-700 mb-5 rounded-2xl">
+      <div className="bg-white text-gray-700 mb-10 rounded-2xl">
         <input
           type="text"
           placeholder="ConvertedAmount"
@@ -76,7 +76,7 @@ function CurrencyConverter() {
           <option value="EUR">EUR</option>
         </select>
       </div>
-      <div className="text-2xl">
+      <div className="text-2xl text-indigo-600 ">
         <p>{`Exchange Rate : 1 ${fromCurrency} = ${exchangeRate} ${toCurrency}`}</p>
       </div>
     </div>

@@ -32,7 +32,7 @@ function RandomQuote() {
       <div className="text-3xl flex text-center mx-30">{quote.quote}</div>
       <div>{quote.author}</div>
       <button
-        className="bg-violet-600 rounded-full px-5 py-2"
+        className="bg-indigo-600 rounded-full px-5 py-2"
         onClick={quoteGenerator}
       >
         Refresh
