@@ -12,17 +12,60 @@ function DragNDrop() {
 
       if (result && result?.todos && result?.todos.length > 0) {
         setLoading(false);
-        setTodos(result?.todos);
-        console.log(todos);
+        const updatedTodos = result.todos.map((todo) => ({
+          ...todo,
+          status: "inProgress",
+        }));
+        setTodos(updatedTodos);
       }
     } catch (error) {
       console.log(error);
+      setLoading(false);
     }
   };
 
   useEffect(() => {
     fetchTodos();
   }, []);
+
+  console.log(todos);
+
+  const handleOnDragStart = (event, id) => {
+    event.dataTransfer.setData("id", id);
+  };
+
+  const handleOnDrop = (event, status) => {
+    const id = event.dataTransfer.getData("id");
+    const updatedTodos = todos.filter((todoItem) => {
+      if (todoItem.id.toString() === id) {
+        todoItem.status = status;
+      }
+      return todoItem;
+    });
+    setTodos(updatedTodos);
+  };
+
+  const renderTodos = () => {
+    const TodoListToRender = {
+      inProgress: [],
+      completed: [],
+    };
+
+    todos.forEach((todoItem) => {
+      TodoListToRender[todoItem.status].push(
+        <div
+          onDragStart={(event) => handleOnDragStart(event, todoItem.id)}
+          draggable
+          key={todoItem.id}
+        >
+          <div className="bg-indigo-600 px-4 py-4 m-3 rounded-2xl ">
+            {todoItem.todo}
+          </div>
+        </div>
+      );
+    });
+    return TodoListToRender;
+  };
 
   if (loading)
     return (
@@ -37,9 +80,23 @@ function DragNDrop() {
         Drag N Drop
       </h1>
       <div className="flex flex-col justify-center items-center h-[725px] text-white bg-black">
-        <div className="flex bg-green-600 text-2xl h-[600px] text-center">
-          <div className="bg-violet-600 w-[500px]">To Do</div>
-          <div className="bg-indigo-600 w-[500px]">Completed</div>
+        <div className="flex text-2xl h-[600px] text-center">
+          <div
+            className=" w-[500px]"
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(event) => handleOnDrop(event, "inProgress")}
+          >
+            <h3 className="mb-10">ToDo</h3>
+            {renderTodos().inProgress}
+          </div>
+          <div
+            className="w-[500px]"
+            onDragOver={(e) => e.preventDefault()}
+            onDrop={(event) => handleOnDrop(event, "completed")}
+          >
+            <h3 className="mb-10">Completed</h3>
+            {renderTodos().completed}
+          </div>
         </div>
       </div>
     </div>
