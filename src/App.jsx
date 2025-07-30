@@ -33,6 +33,7 @@ import CurrencyConverter from './components/CurrencyConverter/index.jsx'
 import FilterProducts from './components/FilterProducts/index.jsx'
 import { Music } from 'lucide-react'
 import MusicPlayer from './components/MusicPlayer/index.jsx'
+import DragNDrop from './components/DragNDrop/index.jsx'
 
 
 function App() {
@@ -76,14 +77,16 @@ function App() {
     </Provider> */}
     {/* <FilterProducts /> */}
 
-    <Counter />
+    {/* <Counter />
     <PaginationTest />
     <DigitalClock />
     <Timer />
     <ProgressBar />
     <RandomQuote />
     <CurrencyConverter />
-    <MusicPlayer />
+    <MusicPlayer /> */}
+    <DragNDrop />
+    
     </>
   )
 }
