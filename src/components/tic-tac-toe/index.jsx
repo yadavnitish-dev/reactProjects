@@ -56,8 +56,8 @@ const TicTacToe = () => {
   }, [board]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-pink-100">
-      <div className="mb-8 text-4xl font-extrabold text-gray-700">Tic Tac Toe</div>
+    <div className="flex flex-col items-center pt-30 min-h-screen bg-black text-white">
+      <div className="text-8xl font-medium mb-30">Tic Tac Toe</div>
       <div className="bg-white rounded-lg shadow-lg p-6">
         <div className="grid grid-rows-3 gap-2">
           {[0, 1, 2].map((row) => (

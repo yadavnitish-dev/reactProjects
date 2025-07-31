@@ -98,7 +98,7 @@ function DragNDrop() {
             onDrop={(event) => handleOnDrop(event, "completed")}
           >
             <div>
-              <h3 className="mb-20">completed</h3>
+              <h3 className="mb-20">Completed</h3>
               {renderTodos().completed}
             </div>
           </div>
