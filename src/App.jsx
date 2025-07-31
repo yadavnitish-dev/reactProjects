@@ -78,7 +78,7 @@ function App() {
     <FilterProducts /> */}
     
     
-    <Counter />
+    {/* <Counter />
     <PaginationTest />
     <Modal />
     <DigitalClock />
@@ -86,9 +86,9 @@ function App() {
     <ProgressBar />
     <RandomQuote />
     <CurrencyConverter />
-    <MusicPlayer /> 
+    <MusicPlayer />  */}
     <DragNDrop />
-    <FormValidation />
+    {/* <FormValidation /> */}
     
     </>
   )

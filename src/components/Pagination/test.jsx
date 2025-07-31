@@ -20,10 +20,10 @@ function PaginationTest() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen gap-1 text-white bg-black">
-      <h1 className="text-8xl mb-20 font-medium">Pagination</h1>
-      <ul className="text-3xl mb-15">
+      <h1 className="text-8xl mb-30 font-medium">Pagination Component</h1>
+      <ul className="text-3xl mb-10">
         {currentListOfItems.map((listItem) => (
-          <li key={listItem.id}>{listItem.name}</li>
+          <li key={listItem.id} className="mb-1">{listItem.name}</li>
         ))}
       </ul>
       <div>

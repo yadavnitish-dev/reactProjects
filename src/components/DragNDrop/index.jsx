@@ -58,7 +58,7 @@ function DragNDrop() {
           draggable
           key={todoItem.id}
         >
-          <div className="bg-indigo-600 px-4 py-4 m-3 rounded-2xl ">
+          <div className="bg-indigo-600 px-4 py-4 m-3 rounded-xl ">
             {todoItem.todo}
           </div>
         </div>
@@ -80,22 +80,27 @@ function DragNDrop() {
         Drag N Drop
       </h1>
       <div className="flex flex-col justify-center items-center h-[725px] text-white bg-black">
-        <div className="flex text-2xl h-[600px] text-center">
+        <div className="flex text-2xl h-[600px] text-center border-2 border-white-600 px-5 py-5">
           <div
             className=" w-[500px]"
             onDragOver={(e) => e.preventDefault()}
             onDrop={(event) => handleOnDrop(event, "inProgress")}
           >
-            <h3 className="mb-10">ToDo</h3>
-            {renderTodos().inProgress}
+            <div>
+              <h3 className="mb-20">ToDo</h3>
+              {renderTodos().inProgress}
+            </div>
           </div>
+          <div className="h-[578px] border-1 border-white ml-1"></div>
           <div
             className="w-[500px]"
             onDragOver={(e) => e.preventDefault()}
             onDrop={(event) => handleOnDrop(event, "completed")}
           >
-            <h3 className="mb-10">Completed</h3>
-            {renderTodos().completed}
+            <div>
+              <h3 className="mb-20">completed</h3>
+              {renderTodos().completed}
+            </div>
           </div>
         </div>
       </div>
