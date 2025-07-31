@@ -27,7 +27,7 @@ const Counter = () => {
   return (
     <>
       <div className="text-center text-7xl pt-30 bg-black text-white h-screen w-screen">
-        <h1 className="drop-shadow-lg text-8xl">Counter with Undo & Redo</h1>
+        <h1 className="drop-shadow-lg text-8xl font-medium">Counter with Undo & Redo</h1>
         <div className="mt-20 text-[200px] font-extrabold drop-shadow-2xl transition-all duration-300">
           {currentValue}
         </div>
@@ -55,7 +55,7 @@ const Counter = () => {
               <Undo2 />
             </button>
           </div>
-          <button className="bg-indigo-600 rounded-full text-white px-4 py-1 text-xl flex items-center shadow-lg font-mono select-none cursor-default">
+          <button className="bg-indigo-600 rounded-full text-white px-10 py-1 text-xl flex items-center shadow-lg font-mono select-none cursor-default">
             {position + 1}/{history.length}
           </button>
           <div className="mt-2">

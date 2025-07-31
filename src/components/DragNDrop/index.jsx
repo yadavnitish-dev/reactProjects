@@ -76,7 +76,7 @@ function DragNDrop() {
 
   return (
     <div>
-      <h1 className="bg-black text-white pt-20 text-8xl text-center">
+      <h1 className="bg-black text-white pt-20 text-8xl text-center font-medium">
         Drag N Drop
       </h1>
       <div className="flex flex-col justify-center items-center h-[725px] text-white bg-black">

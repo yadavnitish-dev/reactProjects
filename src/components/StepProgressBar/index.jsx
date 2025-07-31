@@ -18,7 +18,7 @@ function ProgressBar() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-black">
-      <h1 className="text-8xl mb-40 text-white">Step Progress Bar</h1>
+      <h1 className="text-8xl mb-40 text-white font-medium">Step Progress Bar</h1>
       <div className="flex bg-white  text-[15px]select-none">
         {steps && steps.length
           ? steps.map((step, idx) => (

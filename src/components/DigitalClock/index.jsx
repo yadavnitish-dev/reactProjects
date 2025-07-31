@@ -13,7 +13,7 @@ function DigitalClock() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen bg-black gap-15">
-      <h1 className="text-8xl mb-20 text-white">Digital Clock</h1>
+      <h1 className="text-8xl mb-20 text-white font-medium">Digital Clock</h1>
       <div className="text-white text-9xl">
         <span>{time.getHours().toString().padStart(2, "0")} : </span>
         <span>{time.getMinutes().toString().padStart(2, "0")} : </span>

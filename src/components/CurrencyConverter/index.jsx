@@ -37,7 +37,7 @@ function CurrencyConverter() {
 
   return (
     <div className="bg-black flex flex-col justify-center items-center text-white h-screen">
-      <h1 className="text-8xl mb-30">Currency Converter</h1>
+      <h1 className="text-8xl mb-30 font-medium">Currency Converter</h1>
       <div className="bg-white text-gray-700 mb-3 rounded-2xl">
         <input
           type="number"

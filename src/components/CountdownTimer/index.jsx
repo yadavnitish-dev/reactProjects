@@ -50,7 +50,7 @@ function Countdown({ initialTime, onTimeFinish }) {
 
   return (
     <div className="flex justify-center items-center h-screen flex-col bg-black text-white">
-      <h1 className="mb-20 text-8xl">Timer</h1>
+      <h1 className="mb-20 text-8xl font-medium">Timer</h1>
       <div className="text-9xl">
         {String(minutes).padStart(2, "0")} : {String(seconds).padStart(2, "0")}
       </div>

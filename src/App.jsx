@@ -41,52 +41,53 @@ function App() {
 
   return (
     <>
-    {/* <RandomColor/> */}
-    {/* <StarRating /> */}
-    {/* <ImageSlider/> */}
-    {/* <LoadMoreProducts/> */}
-    {/* <QRCodeGenerator/> */}
-    {/* <ScrollIndicator /> */}
-    {/* <Modal /> */}
-    {/* <GithubProfile /> */}
-    {/* <Autocomplete /> */}
-    {/* <TicTacToe/> */}
+    {/* <RandomColor/>
+    <StarRating />
+    <ImageSlider/>
+    <LoadMoreProducts/>
+    <QRCodeGenerator/>
+    <ScrollIndicator />
+    <GithubProfile />
+    <Autocomplete />
+    <TicTacToe/>
 
-    {/*     
+        
     <FeatureContextProvider>
       <FeatureFlag/>
     </FeatureContextProvider> 
-    */}
+   
 
-    {/* <UseFetchHook /> */}
-    {/* <UseOutsideClickHook /> */}
-    {/* <UseWindowResizeTest /> */}
-    {/* <ScrollToTop_Bottom /> */}
-    {/* <ScrollToSection/> */}
-    {/* <Weather /> */}
+    <UseFetchHook />
+    <UseOutsideClickHook />
+    <UseWindowResizeTest />
+    <ScrollToTop_Bottom />
+    <ScrollToSection/>
+    <Weather />
 
-    {/* <BrowserRouter>
+    <BrowserRouter>
       <RecipeProvider>
         <Appp/>
       </RecipeProvider>
-    </BrowserRouter> */}
+    </BrowserRouter>
 
-    {/* <Provider store={store}>
+    <Provider store={store}>
       <BrowserRouter>
       <ShoppingCart />
       </BrowserRouter>
-    </Provider> */}
-    {/* <FilterProducts /> */}
-
-    {/* <Counter />
+    </Provider> 
+    <FilterProducts /> */}
+    
+    
+    <Counter />
     <PaginationTest />
+    <Modal />
     <DigitalClock />
     <Timer />
     <ProgressBar />
     <RandomQuote />
     <CurrencyConverter />
-    <MusicPlayer /> */}
-    {/* <DragNDrop /> */}
+    <MusicPlayer /> 
+    <DragNDrop />
     <FormValidation />
     
     </>
