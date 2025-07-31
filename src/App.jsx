@@ -34,6 +34,7 @@ import FilterProducts from './components/FilterProducts/index.jsx'
 import { Music } from 'lucide-react'
 import MusicPlayer from './components/MusicPlayer/index.jsx'
 import DragNDrop from './components/DragNDrop/index.jsx'
+import FormValidation from './components/SimpleFormValidation/index.jsx'
 
 
 function App() {
@@ -85,7 +86,8 @@ function App() {
     <RandomQuote />
     <CurrencyConverter />
     <MusicPlayer /> */}
-    <DragNDrop />
+    {/* <DragNDrop /> */}
+    <FormValidation />
     
     </>
   )
