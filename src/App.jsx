@@ -36,6 +36,7 @@ import MusicPlayer from './components/MusicPlayer/index.jsx'
 import DragNDrop from './components/DragNDrop/index.jsx'
 import FormValidation from './components/SimpleFormValidation/index.jsx'
 import FileUploader from './components/FileUploader/index.jsx'
+import QuizApp from './components/QuizApp/index.jsx'
 
 
 function App() {
@@ -90,7 +91,8 @@ function App() {
     {/* <MusicPlayer />  */}
     {/* <DragNDrop /> */}
     {/* <FormValidation /> */}
-    <FileUploader />
+    {/* <FileUploader /> */}
+    <QuizApp />
     </>
   )
 }
