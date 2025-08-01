@@ -35,6 +35,7 @@ import { Music } from 'lucide-react'
 import MusicPlayer from './components/MusicPlayer/index.jsx'
 import DragNDrop from './components/DragNDrop/index.jsx'
 import FormValidation from './components/SimpleFormValidation/index.jsx'
+import FileUploader from './components/FileUploader/index.jsx'
 
 
 function App() {
@@ -77,19 +78,19 @@ function App() {
     <FilterProducts />  */}
     
     
-    <Counter />
-    <PaginationTest />
-    <Modal />
-    <TicTacToe/>
-    <DigitalClock />
-    <Timer />
-    <ProgressBar />
-    <RandomQuote />
-    <CurrencyConverter />
-    <MusicPlayer /> 
-    <DragNDrop />
-    <FormValidation />
-    
+    {/* <Counter /> */}
+    {/* <PaginationTest /> */}
+    {/* <Modal /> */}
+    {/* <TicTacToe/> */}
+    {/* <DigitalClock /> */}
+    {/* <Timer /> */}
+    {/* <ProgressBar /> */}
+    {/* <RandomQuote /> */}
+    {/* <CurrencyConverter /> */}
+    {/* <MusicPlayer />  */}
+    {/* <DragNDrop /> */}
+    {/* <FormValidation /> */}
+    <FileUploader />
     </>
   )
 }
