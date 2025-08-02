@@ -38,6 +38,7 @@ import FormValidation from './components/SimpleFormValidation/index.jsx'
 import FileUploader from './components/FileUploader/index.jsx'
 import QuizApp from './components/QuizApp/index.jsx'
 import NestedComments from './components/NestedComments/index.jsx'
+import PDFViewer from './components/PDFViewer/index.jsx'
 
 
 function App() {
@@ -65,6 +66,8 @@ function App() {
     {/* <ScrollToTop_Bottom /> */}
     {/* <ScrollToSection/> */}
     {/* <Weather /> */}
+    {/* <NestedComments /> */}
+
 
     {/* <BrowserRouter>
       <RecipeProvider>
@@ -94,7 +97,7 @@ function App() {
     {/* <FormValidation /> */}
     {/* <FileUploader /> */}
     {/* <QuizApp /> */}
-    <NestedComments />
+    <PDFViewer />
     </>
   )
 }
