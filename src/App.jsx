@@ -37,6 +37,7 @@ import DragNDrop from './components/DragNDrop/index.jsx'
 import FormValidation from './components/SimpleFormValidation/index.jsx'
 import FileUploader from './components/FileUploader/index.jsx'
 import QuizApp from './components/QuizApp/index.jsx'
+import NestedComments from './components/NestedComments/index.jsx'
 
 
 function App() {
@@ -92,7 +93,8 @@ function App() {
     {/* <DragNDrop /> */}
     {/* <FormValidation /> */}
     {/* <FileUploader /> */}
-    <QuizApp />
+    {/* <QuizApp /> */}
+    <NestedComments />
     </>
   )
 }
