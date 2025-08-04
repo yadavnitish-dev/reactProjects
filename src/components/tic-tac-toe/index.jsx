@@ -6,8 +6,14 @@ const Square = ({ value, onClick, player }) => {
       onClick={onClick}
       disabled={value !== "E" || player !== "E"}
       className={`w-20 h-20 border-2 border-gray-400 flex items-center justify-center text-3xl font-bold
-        ${value === "X" ? "text-blue-600" : value === "O" ? "text-pink-500" : ""}
-        ${value !== "E" || player !== "E" ? "bg-gray-100 cursor-not-allowed" : "bg-white hover:bg-gray-200"}
+        ${
+          value === "X" ? "text-blue-600" : value === "O" ? "text-pink-500" : ""
+        }
+        ${
+          value !== "E" || player !== "E"
+            ? "bg-gray-100 cursor-not-allowed"
+            : "bg-white hover:bg-gray-200"
+        }
         transition-colors duration-200`}
     >
       {value === "E" ? null : <span>{value}</span>}
@@ -58,7 +64,7 @@ const TicTacToe = () => {
   return (
     <div className="flex flex-col items-center pt-30 min-h-screen bg-black text-white">
       <div className="text-8xl font-medium mb-30">Tic Tac Toe</div>
-      <div className="bg-white rounded-lg shadow-lg p-6">
+      <div className="bg-gradient-to-r from-slate-900 to-slate-700 rounded-lg shadow-lg p-6">
         <div className="grid grid-rows-3 gap-2">
           {[0, 1, 2].map((row) => (
             <div key={row} className="flex gap-2">
@@ -78,12 +84,17 @@ const TicTacToe = () => {
         </div>
         <div className="mt-6 text-center text-xl font-semibold">
           {player === "X" || player === "O" ? (
-            <span className="text-green-600">Player {player} is the winner!</span>
+            <span className="text-green-600">
+              Player {player} is the winner!
+            </span>
           ) : player === "D" ? (
             <span className="text-yellow-600">It's a draw!</span>
           ) : (
             <span className="text-gray-500">
-              Turn: <span className={xTurn ? "text-blue-600" : "text-pink-500"}>{xTurn ? "X" : "O"}</span>
+              Turn:{" "}
+              <span className={xTurn ? "text-blue-600" : "text-pink-500"}>
+                {xTurn ? "X" : "O"}
+              </span>
             </span>
           )}
         </div>

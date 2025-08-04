@@ -82,7 +82,7 @@ function NestedComments() {
           cols={"100"}
           value={inputValue}
           onChange={(event) => setInputValue(event.target.value)}
-          className="shadow-2xl"
+          className="shadow-2xl p-1"
         />
         <br />
         <button

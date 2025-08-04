@@ -8,16 +8,14 @@ function QRCodeGenerator() {
   const handleGenerateQrCode = () => {
     setQrCode(input);
     setInput("");
-  }
+  };
 
   return (
-    <div>
-      <h1 className="flex justify-center font-extrabold text-4xl mt-10">
-        QR Code Generator
-      </h1>
-      <div className="flex justify-center mt-20">
+    <div className="flex flex-col items-center h-screen pt-20 ">
+      <h1 className="font-medium text-8xl">QR Code Generator</h1>
+      <div className="pt-15">
         <input
-          className="p-2 shadow-lg mr-5 rounded-full"
+          className="p-2 border-l-1 border-b-1 border-t-1 border-gray-600 rounded-l-full w-[350px] outline-none"
           onChange={(e) => setInput(e.target.value)}
           type="text"
           name="qr-code"
@@ -25,14 +23,14 @@ function QRCodeGenerator() {
           placeholder="Enter your value here"
         />
         <button
-          className="p-2 bg-blue-400 text-white rounded-full"
+          className="pt-2 pr-4 pb-2 pl-3 bg-indigo-600 border-b-1 border-t-1 border-gray-600 hover:bg-indigo-700 active:bg-indigo-800 text-white rounded-r-full"
           disabled={input && input.trim() !== "" ? false : true}
           onClick={handleGenerateQrCode}
         >
           Generate
         </button>
       </div>
-      <div className="flex justify-center mt-5">
+      <div className="mt-20">
         <QRCode
           id="qr-code-value"
           size={400}
